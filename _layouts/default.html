@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+    {% include header.html %}
+    
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    
+    <script src="http://lab.lepture.com/github-cards/widget.js"></script>
+    <script type="text/javascript" src='{{ "js/icons.js" | prepend: site.baseurl }}'></script>
+    <script type="text/javascript" src='{{ "js/index.js" | prepend: site.baseurl }}'></script>
+  </body>
+
+</html>

@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<main class="content" role="main">
+
+    <div class='fixed-nav'>
+    </div>
+
+    {% for post in site.posts %}
+    <div class='post-holder'>
+        {% if post.next == null %}
+            <article class="post first">
+        {% else %}
+            {% if post.previous == null %}
+                <article class="post last">
+            {% else %}
+                <article class="post">
+            {% endif %}
+        {% endif %}
+        <header class="post-header">
+            <h2 class="post-title">{{ post.title }}</h2>
+        </header>
+        <section class="post-content">
+            <p>{{ post.content }}</p>
+        </section>
+    </article>
+    
+    <div class='post-after'></div>
+    </div>
+    {% endfor %}
+</main>

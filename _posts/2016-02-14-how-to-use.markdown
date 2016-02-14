@@ -1,0 +1,25 @@
+---
+layout: post
+title: How to use
+date: 2016-02-14 15:22:38.000000000 +09:00
+---
+`14th Feb 2016`
+
+```bash
+$ git clone https://github.com/onevcat/JekyllScroll.git your_site
+$ cd your_site
+$ bundler install
+$ bundler exec jekyll serve
+```
+
+启用 `JekyllScroll` 作为主题的网站现在应该可以通过 `http://127.0.0.1:4000` 进行访问了。
+
+关于 Jekyll 使用上的更多信息，请参见 [Jekyll 的网站](http://jekyllrb.com) 上的相关内容。
+
+Your site with `JekyllScroll` enabled should be accessible in `http://127.0.0.1:4000`.
+
+For more information about Jekyll, please visit [Jekyll's site](http://jekyllrb.com).
+
+<center>
+<div class="github-card" data-user="onevcat" data-repo="JekyllScroll" data-width=100% data-height="177"></div>
+</center>
